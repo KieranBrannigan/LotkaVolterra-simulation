@@ -1,0 +1,45 @@
+<ctml>
+
+  <phase>
+      <speciesArray> a b c d </speciesArray>
+  </phase>
+
+  <reactionData id="TaskDReactions">
+    
+    <reaction id="reaction01" reversible="no" type="Elementary">
+      <equation>a + c [=] c</equation>
+      <rateCoeff>
+        <Constant>
+          <k>0.01</k> 
+        </Constant>
+      </rateCoeff>
+      <reactants>a:1 c:1</reactants>
+      <products>c:2</products>
+    </reaction>
+
+    <reaction id="reaction02" reversible="no" type="Elementary">
+    
+      <equation>c + d [=] d</equation>
+      <rateCoeff>
+        <Constant>
+          <k updated="yes">1.5</k>
+        </Constant>
+      </rateCoeff>
+      <reactants>c:1 d:1</reactants>
+      <products>d:2</products>
+    </reaction>
+
+    <reaction id="reaction03" reversible="no" type="Elementary">
+    
+      <equation>d [=] b</equation>
+      <rateCoeff>
+        <Constant>
+          <k>1</k>
+        </Constant>
+      </rateCoeff>
+      <reactants>d:1</reactants>
+      <products>b:1</products>
+    </reaction>
+
+  </reactionData>
+</ctml>
